@@ -12,6 +12,11 @@ body {
   background-color: #f8f9fa;
 }
 
+.one img {
+  max-width: 300pxr;
+  width: 100%;
+}
+
 .navbar-brand {
   font-size: 2rem;
   font-weight: 400;
@@ -49,38 +54,88 @@ body {
   width: 100%;
 }
 
-.main {
-  background: url("display/main2.png") no-repeat center center;
-  background-size: cover;
-  height: 90vh;
+.main .one {
+  margin-top: 2rem;
 }
 
-.btn {
-  text-transform: uppercase;
-  font-weight: 600;
+.main .desc h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.main .desc p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.main .btn-dark {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 0;
+  transition: background-color 0.3s ease;
+}
+
+.main .btn-dark:hover {
+  background-color: #333;
+}
+
+.gallery .col-lg-3 {
+  flex: 0 0 300px;
 }
 
 .gallery img {
-  transition: transform 0.3s;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
 }
 
 .gallery img:hover {
   transform: scale(1.05);
-  cursor: pointer;
+}
+
+.gallery h4 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.2rem;
+  margin-top: 0.75rem;
+}
+
+.gallery p {
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.history img,
+.crafting img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
 footer {
-  background-color: #343a40;
-  color: #ffffff;
+  font-family: "Cormorant Garamond", serif;
 }
 
-footer .btn {
-  text-transform: uppercase;
-  font-weight: 600;
+footer h5 {
+  font-size: 1.25rem;
 }
 
 footer .social-links a {
-  margin: 0 10px;
+  color: #fff;
+  margin-right: 1rem;
+  font-size: 1rem;
+}
+
+footer .social-links a:hover {
+  color: #ccc;
+}
+
+footer p {
+  font-size: 0.9rem;
+  margin-top: 1rem;
 }
 
 h1 {
@@ -128,7 +183,6 @@ ul li {
 .container {
   margin-top: 2rem;
 }
-
 
 @media (max-width: 768px) {
   .gallery .col-lg-3 {
