@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Cormorant Garamond", serif;
+  background-color: #f8f9fa;
+}
+
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: 400;
+  font-family: "Playfair Display", serif;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+.nav-link ion-icon {
+  margin-right: 5px;
+}
+
+.navigation-row .nav-link {
+  position: relative;
+  text-decoration: none;
+}
+
+.navigation-row .nav-link::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  background: black;
+  transition: width 0.3s ease;
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+}
+
+.navigation-row .nav-link:hover::after {
+  width: 100%;
+}
+
+.main {
+  background: url("display/main2.png") no-repeat center center;
+  background-size: cover;
+  height: 90vh;
+}
+
+.btn {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.gallery img {
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+footer {
+  background-color: #343a40;
+  color: #ffffff;
+}
+
+footer .btn {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+footer .social-links a {
+  margin: 0 10px;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+  margin-top: 2rem;
+}
+
+.lead {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+.product-image {
+  max-width: 300px;
+  height: auto;
+  margin: auto;
+}
+
+.custom-button {
+  background-color: black;
+  color: white;
+}
+
+.custom-button:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.container {
+  margin-top: 2rem;
+}
+
+
+@media (max-width: 768px) {
+  .gallery .col-lg-3 {
+    width: 50%;
+  }
+  .gallery .col-md-6 {
+    width: 100%;
+  }
+}
